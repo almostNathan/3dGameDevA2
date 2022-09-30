@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.js"></script>
+
+    </br>
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="Assignment2.js"></script>
+
+    <h1>Assignment 2 - Prime Spiral</h1>
+    <p>
+        <div>
+            I recently watch a video by 3brown1blue about how prime numbers line up when plotted a specific way.</br>
+            The Basic concept of it is, you plot each number in polar coordinates where the prime number is both the distance from the center and the angle in radians.</br>
+            That is to say 2 for example would be 2 units away from the center and an angle of 2 radians. When plotted out the primes form an interesting pattern.</br>
+            I find this interesting and it seems to include some of the things we have been learning in class. </br>
+            I decided to use p5js to execute this project because I am familiar with it and it has all the utilities I need to make this project happen.</br>
+        </div>
+    </br>
+        <div>
+            Firstly I think I will need to find prime numbers. There is no built in function for this. </br>
+            After a quick search I found an algorithm that just checks each number from "2-sqrt(num)" and see if they divide evenly. This seems easy enough to implement.</br>
+            Once I have determined the primes, I will need to plot them. To make it feel like a plot, I will need to translate the matrix to the middle THEN rotate it by the angle and draw the point AFTER the translations.</br>
+            Looking thru the documentation, p5js makes it easy to do these translations and rotations. </br>
+        </div>
+    </br>
+        <div>
+            If possible I would also like to add a way to "scale" the graph to show the different patters it should make. If the canvas is 500x500 that means I can only plot primes up to 250 which is not very many.</br>
+            I think I should be able to just scale the way the points are plotted and the pattern should keep while "zooming out". I would like to make that aspect interactive with a slider or something like that.</br>
+        </div>
+
+
+        </p>
+</body>
+</html>
